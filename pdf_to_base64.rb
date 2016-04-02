@@ -6,7 +6,8 @@
 ################################
 require 'base64'
 # texto = Base64.encode64(File.open("/Users/angelhuezo/src/temp/PDF-Base64/Superman.pdf", "rb").read) # "rb" = read binary.
-texto = Base64.encode64(File.open("/Users/angelhuezo/src/temp/PDF-Base64/ThisPDFToTextPlease.pdf", "rb").read) # "rb" = read binary.
+FILE = '/Users/angelhuezo/src/temp/PDF-Base64/ThisPDFtoTextPlease.pdf'
+texto = Base64.encode64(File.open(FILE, "rb").read) # "rb" = read binary.
 
 texto = texto.gsub("\n","")
 
